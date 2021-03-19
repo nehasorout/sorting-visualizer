@@ -1,0 +1,29 @@
+/* @media screen and (min-width: 300px) and (max-width: 682px) {
+  .container {
+    max-height: 40%;
+  }
+}
+
+
+@media screen and (min-width: 400px) and (max-width: 680px) {
+  .container {
+    max-height: 40%;
+  }
+} */
+
+@media screen and (max-width: 682px) {
+  .container {
+    max-height: 70%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    max-height: 60%;
+  }
+}
+@media screen  and (max-width:353px){
+    .container{
+        max-height:40%;
+    }
+}
