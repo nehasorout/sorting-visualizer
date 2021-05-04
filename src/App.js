@@ -13,6 +13,7 @@ function App() {
     const [disableEvents,setDisableEvents]=useState(false)
     const [purple,setPurple]=useState(0)
     const [isGreater,setIsGreater]=useState(false)
+    const [red,setRedBubble]=useState(false)
 
     const generateRandomInteger=(min,max)=>{  
     return Math.floor(min+Math.random()*(max + 1 - min))
@@ -34,8 +35,10 @@ const generateRandomList=()=>{
   return (
    <div>
       <div className="appDiv" style={{"color":"black","fontFamily":"monospace"}}>
-      <Header size={size} setSize={setSize} arr={arr} setArr={setArr} generateRandoList={generateRandomList} setCurrentIndex={setCurrentIndex} setCurrentNext={setCurrentNext}  setEndAlgo={setEndAlgo} disableEvents={disableEvents} setDisableEvents={setDisableEvents} speed={speed} setSpeed={setSpeed} setPurple={setPurple} setIsGreater={setIsGreater}/>
-      <Bar arr={arr} currentIndex={currentIndex} currentNext={currentNext}  endAlgo={endAlgo} purple={purple} isGreater={isGreater}/>
+        
+      <Header size={size} setSize={setSize} arr={arr} setArr={setArr} generateRandoList={generateRandomList} setCurrentIndex={setCurrentIndex} setCurrentNext={setCurrentNext}  setEndAlgo={setEndAlgo} disableEvents={disableEvents} setDisableEvents={setDisableEvents} speed={speed} setSpeed={setSpeed} setPurple={setPurple} setIsGreater={setIsGreater} setRedBubble={setRedBubble}/>
+
+      <Bar arr={arr} currentIndex={currentIndex} currentNext={currentNext}  endAlgo={endAlgo} purple={purple} isGreater={isGreater} red={red}/>
     </div>
    </div>
   );

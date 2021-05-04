@@ -15,13 +15,13 @@ export const insertionSort = async (arr, setArr, setCurrentIndex, speed, setCurr
             setCurrentNext(j)
 
             arr[j + 1] = arr[j];
-            await sleep(100)
+            await sleep(speed)
 
             setArr([...arr]);
-            await sleep(100);
+            await sleep(speed);
             j--;
         }
-        await sleep(100);
+        await sleep(speed);
         setCurrentNext(j)
         arr[j + 1] = current;
         setIsGreater(false)
